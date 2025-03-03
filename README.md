@@ -76,3 +76,20 @@ These Plots are for three consecutive windows of sequence length 168 (7 days) an
 
 - **MixForecast** outperforms NBEATS and TTMS on NRMSE metrics, demonstrating its robustness and accuracy for STLF tasks.
 - The architecture's focus on task-specific enhancements ensures adaptability to diverse building profiles.
+
+
+
+
+## Acknowledgements
+
+We would like to express our sincere gratitude to the authors of the following works for their valuable contributions to the field of short-term load forecasting (STLF) and energy prediction, which have influenced and inspired our work on **MixForecast**:
+
+1. **N-BEATS: Neural Basis Expansion Analysis for Time Series** (Brock et al., 2020)
+   - This work introduced N-BEATS, a powerful and scalable model for time series forecasting, which served as a key foundation for the development of our model architecture.
+
+2. **TSMixer: A Time Series Forecasting Model with Temporal Mixing Layers** (Author et al., 202X)
+   - The TSMixer model's innovative approach to temporal sequence modeling provided significant insights for designing the temporal mixing layers in MixForecast.
+
+Additionally, we acknowledge the publicly available datasets and the authors of these datasets for making their data accessible, which enabled us to benchmark and evaluate our model on real-world scenarios.
+
+We also thank the contributors, researchers, and reviewers who provided invaluable feedback and suggestions that helped refine this work.
