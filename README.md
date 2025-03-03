@@ -80,15 +80,25 @@ These Plots are for three consecutive windows of sequence length 168 (7 days) an
 
 
 
+### Key Insights
+
+- **MixForecast** outperforms NBEATS and TTMS on NRMSE metrics, demonstrating its robustness and accuracy for STLF tasks.
+- The architecture's focus on task-specific enhancements ensures adaptability to diverse building profiles.
+
 ## Acknowledgements
 
 We would like to express our sincere gratitude to the authors of the following works for their valuable contributions to the field of short-term load forecasting (STLF) and energy prediction, which have influenced and inspired our work on **MixForecast**:
 
-1. **N-BEATS: Neural Basis Expansion Analysis for Time Series** (Brock et al., 2020)
-   - This work introduced N-BEATS, a powerful and scalable model for time series forecasting, which served as a key foundation for the development of our model architecture.
+1. **N-BEATS: Neural Basis Expansion Analysis for Time Series** (Oreshkin et al., 2019)  
+   - This work introduced N-BEATS, a powerful and scalable model for time series forecasting, which served as a key foundation for the development of our model architecture.  
+   - Citation:  
+     Oreshkin, B. N., Carpov, D., Chapados, N., & Bengio, Y. (2019). *N-BEATS: Neural Basis Expansion Analysis for Interpretable Time Series Forecasting*. *arXiv preprint arXiv:1905.10437*.
 
-2. **TSMixer: A Time Series Forecasting Model with Temporal Mixing Layers** (Author et al., 202X)
-   - The TSMixer model's innovative approach to temporal sequence modeling provided significant insights for designing the temporal mixing layers in MixForecast.
+2. **TSMixer: Lightweight MLP-Mixer Model for Multivariate Time Series Forecasting** (Ekambaram et al., 2023)  
+   - The TSMixer model's innovative approach to temporal sequence modeling provided significant insights for designing the temporal mixing layers in MixForecast.  
+   - Citation:  
+     Ekambaram, V., Jati, A., Nguyen, N., Sinthong, P., & Kalagnanam, J. (2023). *TSMixer: Lightweight MLP-Mixer Model for Multivariate Time Series Forecasting*. *Proceedings of the 29th ACM SIGKDD Conference on Knowledge Discovery and Data Mining*, 459–469.
+
 
 Additionally, we acknowledge the publicly available datasets and the authors of these datasets for making their data accessible, which enabled us to benchmark and evaluate our model on real-world scenarios.
 
