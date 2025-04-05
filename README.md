@@ -4,7 +4,7 @@ Repository for our new foundation model MixForecast.
 ## MixForecast Model Overview
 Introducing MixForecast, a novel model combining N-BEATS and TSMixer blocks for accurate and efficient short-term load forecasting (STLF) in smart buildings, with fewer parameters and a design optimized for edge-device deployment.
 
-![MixForecast Model Figure](plots/MixForecast.png)
+![MixForecast Model Figure](plots/MixForecast_Diagram.png)
 
 
 
