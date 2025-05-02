@@ -1,13 +1,45 @@
-# MixForecast: 
-Repository for our new foundation model MixForecast.
+# MixForecast
 
-## MixForecast Model Overview
-Introducing MixForecast, a novel model combining N-BEATS and TSMixer blocks for accurate and efficient short-term load forecasting (STLF) in smart buildings, with fewer parameters and a design optimized for edge-device deployment.
+**Repository for our published foundation model, MixForecast, designed for efficient and accurate short-term load forecasting (STLF) in smart buildings.**
+
+---
+
+## 📰 News
+
+📢 **Our paper on MixForecast has been accepted at [FMSys 2025](https://fmsys-org.github.io/2025/index.html)!**  
+Check out the publication below:
+
+> **MixForecast: Mixer-Enhanced Foundation Model for Load Forecasting**  
+> *Anuj Kumar, Harish Kumar Saravanan, Shivam Dwivedi, Pandarasamy Arjunan*  
+> In *Proceedings of the 2nd International Workshop on Foundation Models for Cyber-Physical Systems & Internet of Things (FMSys 2025)*  
+> [DOI: 10.1145/3722565.3727193](https://doi.org/10.1145/3722565.3727193)
+
+
+
+
+---
+
+
+
+
+## 🌐 About MixForecast
+
+**MixForecast** is a novel **Time Series Foundation Model (TSFM)** that combines **N-BEATS** and **TSMixer** blocks to deliver lightweight, generalizable, and high-performing **short-term load forecasting (STLF)** for smart buildings. Designed for **edge-device deployment**, it uses approximately **0.19M parameters**, offering significant efficiency without compromising accuracy.
+
+### ✨ Key Features
+
+- 🧠 Hybrid architecture combining strengths of N-BEATS and TSMixer
+- 💡 Lightweight model with only ~0.19M parameters
+- 🏠 Trained on 63K smart meter time series from global buildings
+- 🌍 Tested on 1,000 commercial and residential buildings worldwide
+- 🔄 Supports both zero-shot and fine-tuned load forecasting
+- 📈 Outperforms Lag-Llama, Tiny Time Mixers, Moirai, Chronos, and traditional models
+
+---
 
 ![MixForecast Model Figure](plots/MixForecast_Diagram.png)
 
-
-
+---
 ### Dataset Details
 Details of Real Building Datasets Used for this Study (Hourly Data)
 
@@ -33,7 +65,7 @@ Details of Real Building Datasets Used for this Study (Hourly Data)
 | iFlex              | Norway       | 4,429            | 2020-2021   |
 | **Total**          |              | **64,103**       |             |
 
-
+---
 
 ## Results
 
@@ -65,7 +97,7 @@ The table below compares the forecasting performance of MixForecast with TSFMs i
 | Moirai - finetuned  |   23.34     | **66.50**  |
 | Lag-llama - finetuned  |     23.21    | 80.09   | 
 
-
+---
 ### Bareilly and Enernoc Building energy (KWh) time-series Visualization
 
 These Plots are for three consecutive windows of sequence length 168 (7 days) and prediction length 24 (1 day).
@@ -84,6 +116,33 @@ These Plots are for three consecutive windows of sequence length 168 (7 days) an
 
 - **MixForecast** outperforms NBEATS and TTMS on NRMSE metrics, demonstrating its robustness and accuracy for STLF tasks.
 - The architecture's focus on task-specific enhancements ensures adaptability to diverse building profiles.
+---
+
+## 📄 Citation
+
+If you use MixForecast in your research or applications, please cite our paper:
+
+```bibtex
+@inproceedings{10.1145/3722565.3727193,
+  author = {Kumar, Anuj and Saravanan, Harish Kumar and Dwivedi, Shivam and Arjunan, Pandarasamy},
+  title = {MixForecast: Mixer-Enhanced Foundation Model for Load Forecasting},
+  year = {2025},
+  isbn = {9798400716089},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3722565.3727193},
+  doi = {10.1145/3722565.3727193},
+  booktitle = {Proceedings of the 2nd International Workshop on Foundation Models for Cyber-Physical Systems & Internet of Things},
+  pages = {25--30},
+  numpages = {6},
+  keywords = {Demand-side Load management, Energy Forecasting, Energy Informatics, Machine Learning, Short-term Load Forecasting (STLF), Smart Grid, Time Series Foundation Models (TSFM)},
+  location = {Irvine, CA, USA},
+  series = {FMSys}
+}
+```
+---
+
+
 
 ## Acknowledgements
 
